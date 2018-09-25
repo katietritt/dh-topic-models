@@ -219,6 +219,17 @@ do this:
 text_dtm <- load_data("~/Desktop/")
 ```
 
+Note: It looks like several people are seeing the following after running this function. It is not a problem. Ignore it.
+```{r}
+Warning message:
+Trying to compute distinct() for variables not found in the data:
+- `row_col`, `column_col`
+This is an error, but only a warning is raised for compatibility reasons.
+The operation will return the input unchanged. 
+> 
+```
+
+
 Now, we'll use that data and run a topic model over it. Here I am
 using 15 topics but you can change this later:
 
